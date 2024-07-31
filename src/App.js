@@ -20,7 +20,7 @@ function App() {
   const getPortfolioData = async() => {
     setIsLoading(() => true)
     try{
-      let res = await axios.get('http://54.146.166.150:3000/api/portfolio')
+      let res = await axios.get('http://35.173.132.135:3000/api/portfolio')
       if(res.status == 200) {
         setPortfolioData(() => res.data)
       } else {
